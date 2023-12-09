@@ -7,8 +7,7 @@
     <title>Pages</title>
     <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="style.css"></noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:Regular|Inter:Regular">
-    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.js" defer></script>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js" defer></script>
 </head>
 <body class="w-screen">
    <main>
@@ -16,18 +15,18 @@
            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <div class="flex items-center">
                     <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                        <img src="assets/logo.png" alt="logo de page" width="24.5" height="28" class="w-auto h-8">
-                       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Pages</span>
+                        <img src="assets/logo.webp" alt="logo de page" width="24.5" height="28" class="w-auto h-8" srcset="">
+                       <span class="self-center text-2xl font-semibold  dark:text-white">Pages</span>
                    </a>
                    <div class="flex items-center justify-between ms-4 gap-2">
                         <a href="" class="bg-white flex items-center justify-center w-8 h-8">
-                            <img src="assets/nav/facebook.png" alt="logo de facebook" width="10" height="19" class="h-4 w-auto">
+                            <img src="assets/nav/facebook.webp" alt="logo de facebook" width="10" height="19" class="h-4 w-auto">
                         </a>
                         <a href="" class="bg-white flex items-center justify-center w-8 h-8">
-                            <img src="assets/nav/twitter.png" alt="logo de twitter" width="16" height="19" class="h-4 w-auto">
+                            <img src="assets/nav/twitter.webp" alt="logo de twitter" width="16" height="19" class="h-4 w-auto">
                         </a>
                         <a href="" class="bg-white flex items-center justify-center w-8 h-8">
-                            <img src="assets/nav/linkedin.png" alt="logo de linkedin" width="14" height="19" class="h-4 w-auto">
+                            <img src="assets/nav/linkedin.webp" alt="logo de linkedin" width="14" height="19" class="h-4 w-auto">
                         </a>
                    </div>
                 </div>
@@ -74,9 +73,12 @@
                    <a href="#" class="block py-2 px-3 text-gray-900 lg:text-white  rounded hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent">Contact</a>
                    </li>
                    <li>
+                    <a href="" class="flex items-center justify-center">
+                        <img src="assets/nav/Cart.webp" alt="Cart" width="37" height="31.5" class="h-6 w-auto">
+                    </a>
                    </li>
                    <li>
-                       <button type="button" class="focus:outline-none text-black font-Cardio bg-Primary-02 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Order Today</button>
+                       <button type="button" class="focus:outline-none text-black font-Cardo bg-Primary-02 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900">Order Today</button>
                    </li>
                </ul>
            </div>
@@ -84,12 +86,12 @@
         <section class="bg-Primary-01 w-full py-32">
             <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row items-center justify-center px-4 gap-10">
                 <div class="w-full lg:w-1/2 text-white">
-                    <h5 class="font-Cardio text-lg flex items-center italic font-light"><div class="w-8 h-[1px] bg-Primary-02 me-3"></div>Welcome to Pages</h5>
-                    <h1 class="font-Cardio text-6xl font-bold mt-4 mb-6">Books are uniquely portable magic</h1>
+                    <h5 class="font-Cardo text-lg flex items-center italic font-light"><div class="w-8 h-[1px] bg-Primary-02 me-3"></div>Welcome to Pages</h5>
+                    <h1 class="font-Cardo text-4xl md:text-6xl font-bold mt-4 mb-6">Books are uniquely <br> portable magic</h1>
                     <p class="mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                     <div class="flex items-center justify-start gap-4">
-                        <button type="button" class="focus:outline-none text-black font-Cardio bg-Primary-02 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-5 py-2.5 dark:focus:ring-yellow-900">Order Today</button>
-                        <a href="#" class="text-white text-sm font-Cardio underline underline-offset-8">Read Free Demo</a>
+                        <button type="button" class="focus:outline-none text-black font-Cardo bg-Primary-02 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-5 py-2.5 dark:focus:ring-yellow-900">Order Today</button>
+                        <a href="#" class="text-white text-sm font-Cardo underline underline-offset-8">Read Free Demo</a>
                     </div>
                     <div class="flex items-center justify-between mt-6">
                         <div>
@@ -106,19 +108,31 @@
                         </div>
                     </div>
                 </div>
-                <img src="assets/book/Book.png" alt="image de livre" class="w-full md:w-1/2 h-auto"  width="592" height="800" >
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                    <img 
+                        src="assets/book/Book.webp" 
+                        alt="image de livre" 
+                        class="w-3/4 md:w-full lg:w-3/4 h-auto" 
+                        sizes="(max-width: 320px) 280px,
+                                (max-width: 480px) 440px,
+                                592px"
+                        width="592" 
+                        height="800"
+                        >
+
+                </div>
             </div>
         </section>
         <section class="my-16 max-w-screen-xl mx-auto w-full px-4">
             <div class="mx-auto text-center">
-                <h2 class="font-bold text-3xl font-Cardio">Author’s Book Includes</h2>
+                <h2 class="font-bold text-3xl font-Cardo">Author’s Book Includes</h2>
                 <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-02"></div>
             </div>
             <div class="flex flex-col lg:flex-row items-center justify-center gap-4 mt-8">
                 <div class="w-full lg:w-1/2 flex flex-col md:flex-row items-center justify-center gap-4">
-                    <img src="assets/book/Book2.png" alt="image de livre2" class="w-full md:w-1/2 h-auto" width="300" height="400" >
+                    <img src="assets/book/Book2.webp" alt="image de livre2" class="w-full md:w-1/2 h-auto" width="300" height="400" >
                     <div>
-                        <h3 class="flex items-center text-2xl font-bold font-Cardio">Atomic One’s</h3>
+                        <h3 class="flex items-center text-2xl font-bold font-Cardo">Atomic One’s</h3>
                         <p class="mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                         <div class="flex justify-between">
                             <div>
@@ -138,9 +152,9 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 flex flex-col md:flex-row items-center justify-center gap-4">
-                    <img src="assets/book/Book1.png" alt="image de livre2" class="w-full md:w-1/2 h-auto" width="300" height="400" >
+                    <img src="assets/book/Book1.webp" alt="image de livre2" class="w-full md:w-1/2 h-auto" width="300" height="400" >
                     <div>
-                        <h3 class="flex items-center text-2xl font-bold font-Cardio">The Dark Light</h3>
+                        <h3 class="flex items-center text-2xl font-bold font-Cardo">The Dark Light</h3>
                         <p class="mb-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
                         <div class="flex justify-between">
                             <div>
@@ -161,6 +175,565 @@
                 </div>
             </div>
         </section>
+        <section class="bg-Primary-04 w-full py-32">
+            <div class="max-w-screen-xl mx-auto w-full flex flex-col lg:flex-row items-center justify-center px-4 gap-10">
+                <img src="assets/about/about.webp" alt="image de livre" class="w-full md:w-1/2 h-auto"  width="592" height="800" >
+                <div class="w-full lg:w-1/2 ">
+                    <div>
+                        <h2 class="font-bold text-3xl font-Cardo">About Author</h2>
+                        <div class="w-10 h-[2px] mt-2 bg-Primary-02"></div>
+                    </div>
+                    <p class="mt-4 mb-6">All the Lorem Ipsum generators on the Internet tend to repeated predefined chunks as necessary, making this the first true value generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful.</p>
+                    <div class="flex items-center justify-between mt-6 h-24 gap-4">
+                        <div class="text-center md:text-start">
+                            <h1 class="font-Cardo text-6xl font-bold mt-4">02</h1>
+                            <p class="mt-2 mb-6">Books Published</p>
+                        </div>
+                        <div class="h-full w-[1px] bg-Primary-02"></div>
+                        <div class="text-center md:text-start">
+                            <h1 class="font-Cardo text-6xl font-bold mt-4">4.5</h1>
+                            <p class="mt-2 mb-6">User Reviews</p>
+                        </div>
+                        <div class="h-full w-[1px] bg-Primary-02"></div>
+                        <div class="text-center md:text-start">
+                            <h1 class="font-Cardo text-6xl font-bold mt-4">04</h1>
+                            <p class="mt-2 mb-6">Best Seller Awards</p>
+                        </div>
+                        
+                    </div>
+                    <div class="bg-Primary-01 flex justify-center w-max gap-4 items-center p-4 text-white mt-8 flex-col md:flex-row mx-auto md:mx-0">
+                        <img src="assets/about/qr.webp" alt="qr code" width="130" height="130">
+                        <div>
+                            <p class="text-lg text-Primary-02 font-Cardo">John Abraham , Ph.d</p>
+                            <p class="mt-1">Mail : johnabraham@gmail.com <br>
+                                Phone : (+2) 123 545 9000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-16 max-w-screen-xl mx-auto w-full px-4">
+            <div class="mx-auto text-center">
+                <h2 class="font-bold text-3xl font-Cardo">Trusted by the Best</h2>
+                <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-02"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+               <div class="text-center">
+                    <img src="assets/trustedBy/Logo.webp" class="mx-auto" width="95.22" height="88.98" alt="logo de client">
+                    <h4 class="text-lg font-Cardo font-bold mt-4">Amazen Corp</h4>
+                    <p class="mb-6">A long established fact that a who looking at its layout.</p>
+               </div>
+               <div class="text-center">
+                    <img src="assets/trustedBy/Logo2.webp" class="mx-auto" width="188.82" height="75.15" alt="logo de client">
+                    <h4 class="text-lg font-Cardo font-bold mt-4">Megan Books</h4>
+                    <p class="mb-6">A long established fact that a who looking at its layout.</p>
+               </div>
+               <div class="text-center">
+                    <img src="assets/trustedBy/Logo3.webp" class="mx-auto" width="140.89" height="88.42" alt="logo de client">
+                    <h4 class="text-lg font-Cardo font-bold mt-4">Los Books</h4>
+                    <p class="mb-6">A long established fact that a who looking at its layout.</p>
+               </div>
+               <div class="text-center">
+                    <img src="assets/trustedBy/Logo4.webp" class="mx-auto" width="99.77" height="99.77" alt="logo de client">
+                    <h4 class="text-lg font-Cardo font-bold mt-4">Urban Lib</h4>
+                    <p class="mb-6">A long established fact that a who looking at its layout.</p>
+               </div>
+            </div>
+        </section>
+        <section class="bg-Primary-01 w-full py-10">
+            <div class="max-w-screen-xl mx-auto w-full flex flex-col md:flex-row items-center justify-center px-4 gap-10">
+                <div class="w-full lg:w-1/2 text-white">
+                    <div>
+                        <h2 class="font-bold text-3xl font-Cardo">Get Book Copy Today!</h2>
+                        <div class="w-10 h-[2px] mt-2 bg-Primary-02"></div>
+                    </div>
+                    <p class="mt-4 mb-6">This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.</p>
+                    <button class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-black group hover:text-white dark:text-white focus:ring-4 focus:outline-none bg-Primary-02 ">
+                        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-Primary-01 text-white dark:bg-gray-900 group-hover:bg-opacity-0">
+                            Order Today
+                        </span>
+                    </button>
+                </div>
+                <img src="assets/callout/Photo.webp" alt="image de livre" class="w-full md:w-2/4 h-auto"  width="640" height="427" >
+            </div>
+        </section>
+        <section class="my-16 max-w-screen-xl mx-auto w-full px-4">
+            <div class="mx-auto text-center">
+                <h2 class="font-bold text-3xl font-Cardo">What will you learn?</h2>
+                <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-02"></div>
+            </div>
+            <div class="max-w-screen-xl mx-auto w-full flex flex-col lg:flex-row items-center justify-center px-4 gap-10 pt-10">
+                <div class="w-full lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                   <div class="bg-Primary-04 p-8">
+                        <div class="rounded-full bg-Primary-02 text-lg text-black font-Cardo w-10 h-10 flex items-center justify-center font-bold">01</div>
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Use HDFS & Map Reduce for storing & analyzing data at scale.</h4>
+                   </div>
+                   <div class="bg-Primary-04 p-8">
+                        <div class="rounded-full bg-Primary-02 text-lg text-black font-Cardo w-10 h-10 flex items-center justify-center font-bold">02</div>
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Consume streaming data using Spark Streaming, Flink, and Storm.</h4>
+                   </div>
+                   <div class="bg-Primary-04 p-8">
+                        <div class="rounded-full bg-Primary-02 text-lg text-black font-Cardo w-10 h-10 flex items-center justify-center font-bold">03</div>
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Choose an appropriate data storage technology for your application</h4>
+                   </div>
+                   <div class="bg-Primary-04 p-8">
+                        <div class="rounded-full bg-Primary-02 text-lg text-black font-Cardo w-10 h-10 flex items-center justify-center font-bold">04</div>
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Analyze non-relational data using HBase, Cassandra, and MongoDB.</h4>
+                   </div>
+                </div>
+                <img src="assets/wwyl/Image.webp" alt="image de livre" class="w-full md:w-1/2 h-auto"  width="592" height="800" >
+            </div>
+        </section>
+        <section class="bg-Primary-04 w-full py-16">
+            <div class="my-16 max-w-screen-xl mx-auto w-full px-4">
+                <div class="mx-auto text-center">
+                    <h2 class="font-bold text-3xl font-Cardo">The Chapter Includes</h2>
+                    <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-02"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+                    <div class="bg-white drop-shadow-[0px_35px_25px_#040B140A] p-8">
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Chapter- 01   Get Started Intro</h4>
+                        <p class="mt-4 mb-6">This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.</p>
+                        <div class="flex justify-start gap-8 items-center">
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Pages :</span><span class="font-medium">&nbsp 5pages</span></h4>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Length :</span><span class="font-medium">&nbsp 1 Hour 15 mins</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white drop-shadow-[0px_35px_25px_#040B140A] p-8">
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Chapter- 02   Create a Massive Content</h4>
+                        <p class="mt-4 mb-6">This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.</p>
+                        <div class="flex justify-start gap-8 items-center">
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Pages :</span><span class="font-medium">&nbsp 5pages</span></h4>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Length :</span><span class="font-medium">&nbsp 1 Hour 15 mins</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white drop-shadow-[0px_35px_25px_#040B140A] p-8">
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Chapter- 03   Maintaining the Creative Arcs</h4>
+                        <p class="mt-4 mb-6">This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.</p>
+                        <div class="flex justify-start gap-8 items-center">
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Pages :</span><span class="font-medium">&nbsp 5pages</span></h4>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Length :</span><span class="font-medium">&nbsp 1 Hour 15 mins</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white drop-shadow-[0px_35px_25px_#040B140A] p-8">
+                        <h4 class="text-lg font-Cardo font-bold mt-4">Chapter- 04   The Conclusion</h4>
+                        <p class="mt-4 mb-6">This the first true value generator on the Internet. It uses alphas dictionary of over 200 Latin words.</p>
+                        <div class="flex justify-start gap-8 items-center">
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Pages :</span><span class="font-medium">&nbsp 5pages</span></h4>
+                            </div>
+                            <div class="flex items-center justify-start">
+                                <div class="flex items-center justify-start me-3">
+                                    <div class="w-4 h-4 rounded-full bg-Primary-02"></div>
+                                </div>
+                                <h4 class="text-base font-Cardo font-bold"><span>Length :</span><span class="font-medium">&nbsp 1 Hour 15 mins</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-16 text-center">
+                    <button type="button" class="focus:outline-none text-black font-Cardo bg-Primary-02 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-16 py-4 me-2 mb-2 dark:focus:ring-yellow-900">Start a 15-Days Free Trail</button>
+                    <p class="mt-4 mb-6">Short description about each chapter <br><span class="underline font-bold underline-offset-4">Have any questions?</span> Contact us</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white w-full py-32">
+            <div class="max-w-screen-xl mx-auto w-full flex flex-col lg:flex-row items-center justify-center px-4 gap-10">
+                <div class="w-full lg:w-1/2 ">
+                    <div>
+                        <h2 class="font-bold text-3xl font-Cardo">What Readers <br> Say About the <br> Book</h2>
+                        <div class="w-10 h-[2px] mt-2 bg-Primary-02"></div>
+                    </div>
+                    <p class="mt-4 mb-6">If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators.</p>
+                    <div class="flex items-center justify-start">
+                        <div class="w-6 h-6 rounded-full bg-Primary-02 me-3 "></div>
+                        <div class="w-6 h-6 rounded-full bg-Primary-02 me-3 "></div>
+                        <div class="w-6 h-6 rounded-full bg-Primary-02 me-3 "></div>
+                        <div class="w-6 h-6 rounded-full bg-Primary-02 me-3 "></div>
+                        <div class="w-6 h-6 rounded-full border border-Primary-02 me-3 overflow-hidden"><div class="w-1/2 h-full bg-Primary-02"></div></div>
+                        <p class="font-bold">(4.8/5)</p>
+                    </div>
+                    <p class="font-bold mt-2">Overall Customer Ratings</p>
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col md:flex-row gap-4 items-center">
+                    <div class="w-full md:w-1/2 flex flex-col gap-4">
+                        <div class="bg-Primary-01 p-6 text-white">
+                            <div class="flex items-center justify-start gap-4">
+                                <img class="w-14 h-14 rounded-full" src="assets/Testimonial/avatar.webp" alt="Rounded avatar" width="85" height="85">
+                                <div>
+                                    <h4 class="text-lg font-Cardo font-bold">Martin Philips</h4>
+                                    <div class="flex items-center justify-start">
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full border border-Primary-02 me-1 overflow-hidden"><div class="w-1/2 h-full bg-Primary-02"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="text-base font-Cardo font-bold mt-4">“ Awesome Impact ”</h4>
+                            <p class="mt-2">All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.</p>
+                        </div>
+                        <div class="bg-Primary-01 p-6 text-white">
+                            <div class="flex items-center justify-start gap-4">
+                                <img class="w-14 h-14 rounded-full" src="assets/Testimonial/avatar2.webp" alt="Rounded avatar" width="85" height="85">
+                                <div>
+                                    <h4 class="text-lg font-Cardo font-bold">James Anderson</h4>
+                                    <div class="flex items-center justify-start">
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                        <div class="w-3 h-3 rounded-full border border-Primary-02 me-1 overflow-hidden"><div class="w-1/2 h-full bg-Primary-02"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h5 class="text-base font-Cardo font-bold mt-4">“ Mind Blowing Words ”</h4>
+                            <p class="mt-2">All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.</p>
+                        </div>
+                    </div>
+                    <div class="bg-Primary-01 p-6 text-white w-full md:w-1/2 h-min">
+                        <div class="flex items-center justify-start gap-4">
+                            <img class="w-14 h-14 rounded-full" src="assets/Testimonial/avatar3.webp" alt="Rounded avatar" width="85" height="85">
+                            <div>
+                                <h4 class="text-lg font-Cardo font-bold">Christina Louis</h4>
+                                <div class="flex items-center justify-start">
+                                    <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                    <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                    <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                    <div class="w-3 h-3 rounded-full bg-Primary-02 me-1 "></div>
+                                    <div class="w-3 h-3 rounded-full border border-Primary-02 me-1 overflow-hidden"><div class="w-1/2 h-full bg-Primary-02"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="text-base font-Cardo font-bold mt-4">“ Great Books Collections ”</h4>
+                        <p class="mt-2">All the Lorem Ipsum generators on the Internet tend to repeat willings predefined chunks value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-Primary-04 w-full py-16">
+            <div class="my-16 max-w-screen-xl mx-auto w-full px-4">
+                <div class="mx-auto text-center">
+                    <h2 class="font-bold text-3xl font-Cardo">Articles & Resources</h2>
+                    <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-02"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                    <div class="bg-white">
+                        <img src="assets/blog/blog.webp" class="w-full h-auto" width="410" height="326" alt="image de blog">
+                        <div class="drop-shadow-[0px_35px_25px_#040B140A] p-6">
+                            <h4 class="text-lg font-Cardo font-bold mt-4">The energy efficiency offers hydrotherapy or swim</h4>
+                            <p class="mt-4 mb-6">The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.</p>
+                            <div class="flex items-baseline justify-between mb-4">
+                                <a href="#" class="font-bold underline underline-offset-4">Read more</a>
+                                <p>Author - 23.05.2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <img src="assets/blog/blog2.webp" class="w-full h-auto" width="410" height="326" alt="image de blog">
+                        <div class="drop-shadow-[0px_35px_25px_#040B140A] p-6">
+                            <h4 class="text-lg font-Cardo font-bold mt-4">Release of Letraset sheets tools containing  passages</h4>
+                            <p class="mt-4 mb-6">The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.</p>
+                            <div class="flex items-baseline justify-between mb-4">
+                                <a href="#" class="font-bold underline underline-offset-4">Read more</a>
+                                <p>Author - 23.05.2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white">
+                        <img src="assets/blog/blog3.webp" class="w-full h-auto" width="410" height="326" alt="image de blog">
+                        <div class="drop-shadow-[0px_35px_25px_#040B140A] p-6">
+                            <h4 class="text-lg font-Cardo font-bold mt-4">The energy efficiency offers hydrotherapy or swim</h4>
+                            <p class="mt-4 mb-6">The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.</p>
+                            <div class="flex items-baseline justify-between mb-4">
+                                <a href="#" class="font-bold underline underline-offset-4">Read more</a>
+                                <p>Author - 23.05.2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-white w-full py-32 px-4">
+            <div class="max-w-screen-xl mx-auto w-full bg-Primary-02 md:px-20 py-24 px-4">
+                <div class="w-full md:w-3/4 text-center mx-auto">
+                    <div class="mx-auto text-center">
+                        <h2 class="font-bold text-3xl font-Cardo text-Primary-01">Articles & Resources</h2>
+                        <div class="w-10 h-[2px] mt-2 mx-auto bg-Primary-01"></div>
+                    </div>
+                    <p class="mt-4 mb-6">The point of using Lorem Ipsum hiter of that using making it look like others readable will get end.</p>
+                </div>
+                <form class="w-full md:w-3/4 mx-auto flex items-center justify-center gap-2">
+                    <div class="relative w-full">
+                        <input type="text" id="simple-search" class="bg-white text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full ps-5 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email id..." required>
+                    </div>
+                    <button type="button" class="focus:outline-none text-white font-Cardo bg-Primary-01 focus:ring-4 focus:ring-yellow-300 font-medium text-sm px-8 md:px-16 py-2.5 dark:focus:ring-yellow-900 ">Subscribe</button>
+                </form>
+            </div>
+
+        </section>
    </main>
 </body>
+<footer class="bg-Primary-01 text-white dark:bg-gray-900 px-4">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="assets/logo.webp" alt="logo de page" width="24.5" height="28" class="w-auto h-8">
+               <span class="self-center text-2xl font-semibold  dark:text-white">Pages</span>
+           </a>
+           <div class="flex items-center justify-between mt-4 gap-2 w-max">
+                <a href="" class="bg-transparent border border-Primary-02 flex items-center justify-center w-8 h-8">
+                    <img src="assets/footer/facebook.webp" alt="logo de facebook" width="12" height="22" class="h-3 w-auto">
+                </a>
+                <a href="" class="bg-transparent border border-Primary-02 flex items-center justify-center w-8 h-8">
+                    <img src="assets/footer/twitter.webp" alt="logo de twitter" width="18" height="22" class="h-3 w-auto">
+                </a>
+                <a href="" class="bg-transparent border border-Primary-02 flex items-center justify-center w-8 h-8">
+                    <img src="assets/footer/linkedin.webp" alt="logo de linkedin" width="16" height="22" class="h-3 w-auto">
+                </a>
+                <a href="" class="bg-transparent border border-Primary-02 flex items-center justify-center w-8 h-8">
+                    <img src="assets/footer/instagram.webp" alt="logo de instagram" width="17" height="23" class="h-3 w-auto">
+                </a>
+            </div>
+        </div>
+          <div class="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3">
+                <div>
+                  <h4 class="text-lg font-Cardo font-bold text-white mt-4 mb-6">Explore</h4>
+                  <ul class="text-white font-medium">
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Home</a>
+                      </li>
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">About Us</a>
+                      </li>
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Services</a>
+                      </li>
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Appointments</a>
+                      </li>
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Blog</a>
+                      </li>
+                      <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Contact Us</a>
+                      </li>
+                  </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-Cardo font-bold text-white mt-4 mb-6">Utility Pages</h4>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Start here</a>
+                        </li>
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline ">Style guide</a>
+                        </li>
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline ">404 not found</a>
+                        </li>
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline ">Password protected</a>
+                        </li>
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Licenses</a>
+                        </li>
+                        <li class="mb-4 flex items-center gap-2">
+                        <div class="flex justify-start items-center">
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                            <div class="flex items-center justify-start me-1">
+                                <div class="w-2 h-2 rounded-full border border-Primary-02"></div>
+                            </div>
+                        </div>
+                        <a href="https://flowbite.com/" class="hover:underline">Changelog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-min">
+                    <h4 class="text-lg font-Cardo font-bold text-white mt-4 mb-6">Keep in Touch</h4>
+                    <ul class="text-white font-medium">
+                        <li class="mb-4 flex gap-2 items-stretch">
+                            <p class="font-bold font-Cardo  w-14 whitespace-nowrap">Address :</p>
+                            <p>24A Kingston St, Los Vegas NC 28202, USA.</p>
+                        </li>
+                        <li class="mb-4 flex gap-2 items-stretch">
+                            <p class="font-bold font-Cardo  w-14 whitespace-nowrap">Mail :</p>
+                            <p class="">support@doctors.com</p>
+                        </li>
+                        <li class="mb-4 flex gap-2 items-stretch">
+                            <p class="font-bold font-Cardo  w-14 whitespace-nowrap">Phone :</p>
+                            <p class="">(+22) 123 - 4567 - 900</p>
+                        </li>   
+                    </ul>
+                </div>
+          </div>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <div class="sm:flex sm:items-center sm:justify-between">
+          <p class="mx-auto text-white text-center">© Drafted by <a href="https://flowbite.com/" class="hover:underline font-bold">Victorflow</a>. All Rights Reserved.- Powered by <a href="https://flowbite.com/" class="hover:underline font-bold">Victorflow</a></p>
+      </div>
+    </div>
+</footer>
+
 </html>

@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "postcss build main.css -o ./public/style.css --watch",
-    "prod": "npx tailwindcss -o ./public/build.css --minify"
+    "build": "postcss build main.css -o ./public/style.css && postcss ./public/style.css -o ./public/style.min.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.3.6"

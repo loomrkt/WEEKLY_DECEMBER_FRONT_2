@@ -7,9 +7,10 @@ module.exports = {
         "Primary-01": "#1B3764",
         "Primary-02": "#FFCA42",
         "Primary-03": "#F6F8FC",
+        "Primary-04": "#F4F8FF",
       },
       fontFamily: {
-        Cardio: "Cardio",
+        Cardo: "Cardo",
       },
       
     },
