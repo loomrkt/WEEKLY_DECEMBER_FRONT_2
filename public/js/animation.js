@@ -94,12 +94,7 @@ tl.from('#wwyl1', {
     duration: 0.7,
     ease: 'power1',
 });
-tl.from('#wwyl2', {
-    x: '100',
-    opacity: 0,
-    duration: 0.7,
-    ease: 'power1',
-});
+if(window.innerWidth <= 768){ 
 tl.from('.wwyl3El', {
     x: '50',
     opacity: 0,
@@ -107,6 +102,22 @@ tl.from('.wwyl3El', {
     ease: 'power1',
     stagger: 0.3,
 });
+}
+tl.from('#wwyl2', {
+    x: '100',
+    opacity: 0,
+    duration: 0.7,
+    ease: 'power1',
+});
+if(window.innerWidth > 768){ 
+tl.from('.wwyl3El', {
+    x: '50',
+    opacity: 0,
+    duration: 0.7,
+    ease: 'power1',
+    stagger: 0.3,
+});
+}
 
 tl = gsap.timeline({
     scrollTrigger: {
